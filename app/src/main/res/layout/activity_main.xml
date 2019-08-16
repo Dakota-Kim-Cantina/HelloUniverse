@@ -1,3 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_height="match_parent"
-              android:layout_width="match_parent"/>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tools="http://schemas.android.com/tools"
+              android:orientation="vertical" android:background="@android:color/holo_green_light"
+              android:layout_height="match_parent"
+              android:layout_width="match_parent">
+	<TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+	          tools:text="Sample Value" android:id="@+id/greeting_text"/>
+	<EditText android:layout_width="match_parent" android:layout_height="wrap_content" android:id="@+id/person_button"/>
+	<Button android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Greet" android:id="@+id/action_greet"/>
+</LinearLayout>
