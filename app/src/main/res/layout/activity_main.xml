@@ -1,10 +1,35 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tools="http://schemas.android.com/tools"
-              android:orientation="vertical" android:background="@android:color/holo_green_light"
-              android:layout_height="match_parent"
-              android:layout_width="match_parent">
-	<TextView android:layout_width="match_parent" android:layout_height="wrap_content"
-	          tools:text="Sample Value" android:id="@+id/greeting_text"/>
-	<EditText android:layout_width="match_parent" android:layout_height="wrap_content" android:id="@+id/person_button"/>
-	<Button android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Greet" android:id="@+id/action_greet"/>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:background="@android:color/holo_green_light"
+	android:gravity="center_vertical"
+	android:orientation="vertical"
+	android:padding="32dp">
+
+	<TextView
+		android:id="@+id/greeting_text"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_marginBottom="16dp"
+		tools:text="Sample Value" />
+
+	<EditText
+		android:id="@+id/person_button"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_marginBottom="16dp" />
+
+	<Button
+		android:id="@+id/action_greet"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:text="Greet" />
+
+	<Button
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:text="Goodbye"
+		android:id="@+id/action_goodbye"/>
 </LinearLayout>

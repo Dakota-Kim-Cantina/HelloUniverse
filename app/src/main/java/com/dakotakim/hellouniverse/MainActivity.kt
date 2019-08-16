@@ -14,10 +14,15 @@ class MainActivity : AppCompatActivity() {
         val greetingText = findViewById<TextView>(R.id.greeting_text)
         val personButton = findViewById<EditText>(R.id.person_button)
         val actionGreet = findViewById<Button>(R.id.action_greet)
+        val actionGoodbye = findViewById<Button>(R.id.action_goodbye)
 
         // Lambda syntax
         actionGreet.setOnClickListener { btn ->
             greetingText.text = "Hello, ${personButton.text}"
+        }
+
+        actionGoodbye.setOnClickListener { btn ->
+            greetingText.text = "Goodbye, ${personButton.text}"
         }
     }
 }
