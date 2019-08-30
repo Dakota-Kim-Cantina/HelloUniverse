@@ -6,6 +6,7 @@ import android.widget.Button
 import android.widget.EditText
 import android.widget.TextView
 import androidx.databinding.DataBindingUtil
+import androidx.lifecycle.ViewModel
 import com.dakotakim.hellouniverse.databinding.ActivityMainBinding
 
 class MainActivity : AppCompatActivity() {
@@ -28,4 +29,8 @@ class MainActivity : AppCompatActivity() {
             binding.greetingText.text = "Goodbye, ${binding.personButton.text}"
         }
     }
+}
+
+class HelloWorldViewModel: ViewModel() {
+    
 }
