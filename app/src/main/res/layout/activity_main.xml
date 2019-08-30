@@ -1,5 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <layout>
+	<data>
+		<variable
+			name="viewModel"
+			type="com.dakotakim.hellouniverse.HelloWorldViewModel" />
+	</data>
 	<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
 		xmlns:tools="http://schemas.android.com/tools"
 		android:layout_width="match_parent"
@@ -9,28 +14,33 @@
 		android:orientation="vertical"
 		android:padding="32dp">
 
+
 		<TextView
 			android:id="@+id/greetingText"
 			android:layout_width="match_parent"
 			android:layout_height="wrap_content"
 			android:layout_marginBottom="16dp"
+			android:text="@{viewModel.greetingText}"
 			tools:text="Sample Value" />
 
 		<EditText
-			android:id="@+id/personButton"
+			android:id="@+id/personText"
 			android:layout_width="match_parent"
 			android:layout_height="wrap_content"
-			android:layout_marginBottom="16dp" />
+			android:layout_marginBottom="16dp"
+			android:text="@={viewModel.personName}"/>
 
 		<Button
 			android:id="@+id/greetButton"
 			android:layout_width="match_parent"
 			android:layout_height="wrap_content"
-			android:text="Greet" />
+			android:onClick="@{() -> viewModel.onGreetActionClicked()}"
+			android:text="Greet"/>
 
 		<Button
 			android:layout_width="match_parent"
 			android:layout_height="wrap_content"
+			android:onClick="@{() -> viewModel.onGoodbyeActionClicked()}"
 			android:text="Goodbye"
 			android:id="@+id/goodbyeButton"/>
 	</LinearLayout>
