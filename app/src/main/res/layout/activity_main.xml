@@ -43,6 +43,13 @@
 			android:onClick="@{() -> viewModel.onGoodbyeActionClicked()}"
 			android:text="Goodbye"
 			android:id="@+id/goodbyeButton"/>
+
+		<Button
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:onClick="@{() -> viewModel.onColorsActionClicked()}"
+			android:text="Colors"
+			android:id="@+id/colorsButton" />
 	</LinearLayout>
 </layout>
 
